@@ -1,0 +1,137 @@
+.contact {
+  padding: var(--spacing-4xl) 0;
+  background: linear-gradient(180deg, var(--white) 0%, var(--gray-50) 100%);
+}
+
+.contact .section-header {
+  margin-bottom: var(--spacing-4xl);
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-4xl);
+  align-items: center;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+}
+
+.contact-item {
+  display: flex;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-2xl);
+  background: var(--white);
+  border-radius: var(--border-radius-xl);
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition-base);
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.contact-item:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.contact-icon {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.contact-item h4 {
+  color: var(--gray-900);
+  margin: 0 0 var(--spacing-sm);
+  font-size: var(--text-lg);
+}
+
+.contact-item p {
+  color: var(--gray-600);
+  margin: 0;
+  font-size: var(--text-sm);
+  line-height: var(--line-height-relaxed);
+}
+
+.contact-map {
+  animation: slideInRight 0.6s ease-out;
+}
+
+.map-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+  border-radius: var(--border-radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.map-content {
+  text-align: center;
+  color: var(--white);
+}
+
+.map-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.map-content p {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+  }
+
+  .map-placeholder {
+    aspect-ratio: auto;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .contact-info {
+    gap: var(--spacing-lg);
+  }
+
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-lg);
+  }
+
+  .contact-icon {
+    font-size: 2.5rem;
+  }
+
+  .map-placeholder {
+    min-height: 250px;
+  }
+}

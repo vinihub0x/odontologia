@@ -1,0 +1,90 @@
+#!/bin/bash
+# Script para visualizar a estrutura do projeto
+
+tree -L 3 -I 'node_modules|dist' --dirsfirst
+
+# Ou manualmente:
+
+# 📦 belo-sorriso-app
+# ├── 📁 src
+# │   ├── 📁 components
+# │   │   ├── 📁 layout
+# │   │   │   ├── Navbar.jsx
+# │   │   │   ├── Navbar.css
+# │   │   │   ├── Footer.jsx
+# │   │   │   ├── Footer.css
+# │   │   │   ├── FloatingButton.jsx
+# │   │   │   ├── FloatingButton.css
+# │   │   │   └── index.js
+# │   │   ├── 📁 sections
+# │   │   │   ├── HeroSection.jsx
+# │   │   │   ├── HeroSection.css
+# │   │   │   ├── AboutSection.jsx
+# │   │   │   ├── AboutSection.css
+# │   │   │   ├── ServicesSection.jsx
+# │   │   │   ├── ServicesSection.css
+# │   │   │   ├── TeamSection.jsx
+# │   │   │   ├── TeamSection.css
+# │   │   │   ├── TestimonialsSection.jsx
+# │   │   │   ├── TestimonialsSection.css
+# │   │   │   ├── HoursSection.jsx
+# │   │   │   ├── HoursSection.css
+# │   │   │   ├── ContactSection.jsx
+# │   │   │   ├── ContactSection.css
+# │   │   │   └── index.js
+# │   │   ├── 📁 cards
+# │   │   │   ├── ServiceCard.jsx
+# │   │   │   ├── ServiceCard.css
+# │   │   │   ├── TeamCard.jsx
+# │   │   │   ├── TeamCard.css
+# │   │   │   ├── TestimonialCard.jsx
+# │   │   │   ├── TestimonialCard.css
+# │   │   │   └── index.js
+# │   │   ├── 📁 forms
+# │   │   │   ├── AppointmentForm.jsx
+# │   │   │   ├── AppointmentForm.css
+# │   │   │   ├── BudgetForm.jsx
+# │   │   │   ├── BudgetForm.css
+# │   │   │   ├── PaymentForm.jsx
+# │   │   │   ├── PaymentForm.css
+# │   │   │   └── index.js
+# │   │   └── 📁 ui
+# │   │       ├── Button.jsx
+# │   │       ├── Button.css
+# │   │       ├── Modal.jsx
+# │   │       ├── Modal.css
+# │   │       ├── Loading.jsx
+# │   │       ├── Loading.css
+# │   │       ├── SuccessModal.jsx
+# │   │       ├── SuccessModal.css
+# │   │       └── index.js
+# │   ├── 📁 pages
+# │   │   ├── Home.jsx
+# │   │   └── Home.css
+# │   ├── 📁 data
+# │   │   ├── services.js
+# │   │   ├── team.js
+# │   │   └── testimonials.js
+# │   ├── 📁 hooks
+# │   │   └── index.js
+# │   ├── 📁 styles
+# │   │   ├── global.css
+# │   │   ├── variables.css
+# │   │   └── animations.css
+# │   ├── 📁 assets (imagens, se houver)
+# │   ├── App.jsx
+# │   ├── App.css
+# │   ├── main.jsx
+# │   └── index.css
+# ├── 📁 public
+# │   └── (assets públicos)
+# ├── 📄 index.html
+# ├── 📄 package.json
+# ├── 📄 package-lock.json
+# ├── 📄 vite.config.js
+# ├── 📄 .gitignore
+# ├── 📄 README.md
+# ├── 📄 COMPONENTS.md
+# ├── 📄 DEPLOYMENT.md
+# ├── 📄 PROJECT_SUMMARY.md
+# └── 📄 plan.md

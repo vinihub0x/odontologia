@@ -1,0 +1,38 @@
+export const teamData = [
+  {
+    id: 1,
+    name: 'Dra. Maria Silva',
+    specialty: 'Ortodontia',
+    bio: 'Especialista em alinhamento dental com mais de 15 anos de experiência.',
+    experience: '15 anos',
+    image: '👩‍⚕️',
+    credentials: 'CRO-SP 123456, Especialista em Ortodontia',
+  },
+  {
+    id: 2,
+    name: 'Dr. João Santos',
+    specialty: 'Implantodontia',
+    bio: 'Cirurgião-dentista com expertise em implantes de alta complexidade.',
+    experience: '18 anos',
+    image: '👨‍⚕️',
+    credentials: 'CRO-SP 789012, Especialista em Implantodontia',
+  },
+  {
+    id: 3,
+    name: 'Dra. Ana Costa',
+    specialty: 'Estética Dental',
+    bio: 'Especialista em procedimentos estéticos com foco em resultado natural.',
+    experience: '12 anos',
+    image: '👩‍⚕️',
+    credentials: 'CRO-SP 345678, Especialista em Estética Dental',
+  },
+  {
+    id: 4,
+    name: 'Dr. Carlos Oliveira',
+    specialty: 'Odontopediatria',
+    bio: 'Profissional dedicado ao atendimento de crianças com carinho e segurança.',
+    experience: '10 anos',
+    image: '👨‍⚕️',
+    credentials: 'CRO-SP 901234, Especialista em Odontopediatria',
+  },
+];
